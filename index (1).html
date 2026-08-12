@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Piramal Loan Services | Hyderabad</title>
+<meta name="description" content="Loan assistance in Hyderabad for Home Loan, LAP and Personal Loan. Check eligibility and contact Piramal Loan Services on WhatsApp.">
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#f5f7fb;color:#172033;line-height:1.5}
+header{background:#123b73;color:white;padding:18px 20px;position:sticky;top:0;z-index:5}
+.nav{max-width:1050px;margin:auto;display:flex;justify-content:space-between;align-items:center}.brand{font-size:21px;font-weight:700}
+.hero{background:linear-gradient(135deg,#123b73,#1d65b3);color:white;padding:65px 20px;text-align:center}
+.hero h1{font-size:42px;margin:0 0 14px}.hero p{font-size:19px;max-width:700px;margin:0 auto 25px}
+.btn{display:inline-block;padding:14px 24px;border-radius:8px;text-decoration:none;font-weight:700;margin:5px}
+.whatsapp{background:#19a85b;color:white}.primary{background:white;color:#123b73}
+.container{max-width:1050px;margin:auto;padding:45px 20px}.center{text-align:center}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:white;padding:25px;border-radius:14px;box-shadow:0 5px 20px #00000012}
+.card h3{margin-top:0;color:#123b73}.icon{font-size:34px}
+.form{max-width:650px;margin:25px auto;background:white;padding:28px;border-radius:14px;box-shadow:0 5px 20px #00000012}
+label{display:block;font-weight:700;margin:12px 0 6px}input,select{width:100%;padding:13px;border:1px solid #ccd3df;border-radius:7px;font-size:16px}
+.submit{width:100%;border:0;cursor:pointer;font-size:16px;background:#19a85b;color:white;padding:14px;border-radius:8px;font-weight:700;margin-top:18px}
+.points{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;max-width:700px;margin:25px auto}.point{background:white;padding:14px;border-radius:9px}
+.disclaimer{font-size:12px;color:#667085;text-align:center;margin-top:25px}
+footer{background:#10233f;color:white;text-align:center;padding:28px 20px}
+@media(max-width:750px){.cards{grid-template-columns:1fr}.points{grid-template-columns:1fr}.hero h1{font-size:31px}.nav{gap:10px}.brand{font-size:18px}}
+</style>
+</head>
+<body>
+<header><div class="nav"><div class="brand">Piramal Loan Services</div><a class="btn whatsapp" href="https://wa.me/919652241811?text=Hi%20Piramal%20Loan%20Services%2C%20I%20want%20to%20check%20loan%20eligibility." target="_blank">WhatsApp</a></div></header>
+
+<section class="hero">
+<h1>Find the Right Loan Option in Hyderabad</h1>
+<p>Explore Home Loan, Loan Against Property and Personal Loan options with eligibility and application assistance.</p>
+<a class="btn whatsapp" href="https://wa.me/919652241811?text=Hi%20Piramal%20Loan%20Services%2C%20I%20want%20to%20check%20loan%20eligibility." target="_blank">Apply on WhatsApp</a>
+<a class="btn primary" href="#apply">Check Eligibility</a>
+</section>
+
+<section class="container">
+<h2 class="center">Our Loan Services</h2>
+<div class="cards">
+<div class="card"><div class="icon">🏠</div><h3>Home Loan</h3><p>Loan assistance for purchase, construction and eligible home loan balance transfer requirements.</p></div>
+<div class="card"><div class="icon">🏢</div><h3>LAP</h3><p>Loan Against Property options for eligible personal and business financial requirements.</p></div>
+<div class="card"><div class="icon">💰</div><h3>Personal Loan</h3><p>Explore unsecured personal loan options based on applicant eligibility and lender policy.</p></div>
+</div>
+</section>
+
+<section class="container" id="apply">
+<h2 class="center">Check Your Eligibility</h2>
+<form class="form" onsubmit="sendWhatsApp(event)">
+<label for="name">Name</label><input id="name" required placeholder="Enter your name">
+<label for="mobile">Mobile Number</label><input id="mobile" required type="tel" pattern="[0-9]{10}" placeholder="10-digit mobile number">
+<label for="type">Loan Type</label>
+<select id="type" required><option value="">Select loan type</option><option>Home Loan</option><option>LAP</option><option>Personal Loan</option></select>
+<label for="amount">Loan Amount Needed</label><input id="amount" required placeholder="Example: ₹25,00,000">
+<button class="submit" type="submit">Submit & Continue on WhatsApp</button>
+<p class="disclaimer">Submitting this form opens WhatsApp with your details. Loan approval, rate, amount, tenure and charges are subject to the respective lender's policy and applicant eligibility.</p>
+</form>
+</section>
+
+<section class="container">
+<h2 class="center">Why Contact Us?</h2>
+<div class="points">
+<div class="point">✅ Eligibility assistance</div><div class="point">✅ Documentation guidance</div>
+<div class="point">✅ Multiple loan options</div><div class="point">✅ Hyderabad & surrounding areas</div>
+</div>
+</section>
+
+<footer>
+<strong>Piramal Loan Services</strong><br>
+Hyderabad, Telangana<br>
+<a href="tel:+919652241811" style="color:white">📞 9652241811</a> &nbsp; | &nbsp;
+<a href="https://wa.me/919652241811" style="color:white" target="_blank">WhatsApp</a>
+<p class="disclaimer" style="color:#cbd5e1">We do not guarantee loan approval or a specific interest rate. Terms & Conditions apply.</p>
+</footer>
+
+<script>
+function sendWhatsApp(e){
+ e.preventDefault();
+ const name=document.getElementById('name').value;
+ const mobile=document.getElementById('mobile').value;
+ const type=document.getElementById('type').value;
+ const amount=document.getElementById('amount').value;
+ const msg=`Hi Piramal Loan Services, I want to check my loan eligibility.%0A%0AName: ${encodeURIComponent(name)}%0AMobile: ${encodeURIComponent(mobile)}%0ALoan Type: ${encodeURIComponent(type)}%0ALoan Amount: ${encodeURIComponent(amount)}`;
+ window.open(`https://wa.me/919652241811?text=${msg}`,'_blank');
+}
+</script>
+</body>
+</html>
